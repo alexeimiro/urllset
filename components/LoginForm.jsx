@@ -1,7 +1,7 @@
 "use client";
 
-import { XCircleIcon } from '@heroicons/react/solid';
-import Link from 'next/link';
+import { XCircleIcon } from "@heroicons/react/solid";
+import Link from "next/link";
 import { useState } from "react";
 import { signIn } from "next-auth/react";
 import { useRouter } from "next/navigation";
@@ -53,13 +53,13 @@ export default function LoginForm() {
                     <button className="font-bold cursor-pointer">Sign in</button>
 
                     {error && (
-                    <div className='flex place-items-center text-sm py-2 px-2'>
+                    <div className="flex place-items-center text-sm py-2 px-2">
                     <XCircleIcon className="h-6 w-6 text-red-500" /><p>Invalid credentials</p>
                     </div>
                     )}
 
-                    <Link className='mt-3 text-right' href={'/register'}>
-                        Don't have an account? <span className='underline'>Register</span>
+                    <Link className="mt-3 text-right" href={"/register"}>
+                        Don't have an account? <span className="underline">Register</span>
                     </Link>
                 </form>
             </div>
